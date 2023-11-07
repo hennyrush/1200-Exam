@@ -26,6 +26,18 @@ nav { /* Navigation box */
     margin-right: 0%;
     height: 130px;
 }
+
+/* Sirkelstil for logo */
+.logo-circle {
+    width: 80px; /* Sett ønsket bredde og høyde for sirkelen */
+    height: 80px;
+    border-radius: 50%; /* Gjør en firkantet div til en sirkel */
+    background-color: #ff0000; /* Bakgrunnsfargen til sirkelen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-menu { /* Navigation menu items */ 
     display: flex;
     justify-content: space-around;
