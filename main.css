@@ -1,67 +1,77 @@
-* {
+* { /* navbar fyller ut hele siden */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-nav { /* Navigation box */
+nav { /* Navigation bar */
     display: flex;
     padding: 80px 100px;
     justify-content: space-around;
     align-items: center;
     background-color: #Ffff00;
-    height: 130px;
+    height: 400px;
 }
-.logo a {
+.logo a { /* fjerner "link" funksjon */
     text-decoration: none;
     color: #000000; 
     height: 130px;  
-    
 }
 
-.logo {
- 
+.logo { /*logo posisjon */
     display: flex;
     justify-content: space-around;
     margin-right: 0%;
-    height: 130px;
+    height: 350px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-/* Sirkelstil for logo */
-.logo-circle {
-    width: 80px; /* Sett ønsket bredde og høyde for sirkelen */
-    height: 80px;
-    border-radius: 50%; /* Gjør en firkantet div til en sirkel */
-    background-color: #ff0000; /* Bakgrunnsfargen til sirkelen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-menu { /* Navigation menu items */ 
+.nav-menu { /* Navbar elementers plassering */ 
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-right: 0%;
-    height: 130px;
+    height: 320px;
 }
-.nav-menu a {
+
+.nav-menu a { /* elementer i navbar style */
     color: #000000;
     text-decoration: none;
     font-size: 20px;
 }
-.nav-menu a:hover {
+.nav-menu a:hover { /*skygge over elementer når man rører dem */
     color: grey;
 }
-.nav-menu li {
-    list-style: none; /* removes bullet points of list*/
+.nav-menu li { /* fjerner liste punkter*/
+    list-style: none;
 }
 
-#index_image {
+#index_image { /* bilde på index side */
     max-height: 750px;
     min-height: 170px;
     -o-object-fit: cover;
     object-fit: cover;
     vertical-align: bottom;
     width: 100%;
+}
+
+.navbar-paragraph {
+    display: block;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 100px; /* Adjust the margin as needed */
+}
+
+.image-text{
+    position: relative;
+    text-align: center;
+    color: rgb(231, 195, 16);
+  }
+
+.nede-venstre{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 50px;
 }
