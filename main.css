@@ -128,7 +128,7 @@ nav li {
 }
 
 .info-boks h3 {
-    font-weight: 400px;
+    font-weight: 200px;
     font-size: 23px;
     line-height: 8;
     margin-left: 100px;
@@ -142,7 +142,7 @@ nav li {
     left: 95px;
     right: 30px;
     position: absolute;
-    background-color: #3cb6c6;
+    background-color: #20636ad4;
     border-radius: 10px;
     text-align: center;
 }
@@ -150,15 +150,34 @@ nav li {
 .les-mer-boks h4{
     margin-top: 5px;
     font-weight: 600;
+    font-family: Optima;
 }
 
 .les-mer-boks a {
     text-decoration: none;
-    color:#000000;
+    color: white;
 }
 
 .les-mer-boks a:hover { /*skygge over elementer når man rører dem */
     color: grey;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#20636ad4;
+}
+
+img {
+    width: 50vw;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    
 }
 
 .bottom-nav { /*navbar på bunn */
@@ -306,3 +325,228 @@ color: red;
 }
 
 
+
+/* LOCATION FUN PAGE ER UNDER HER*/
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 10px 0;
+  }
+
+#drink-menu {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .menu-item-title {
+    color: #333;
+    text-align: center;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-item {
+    margin: 10px 0;
+  }
+  
+  #creative-hot-menu {
+    background-color: #3cb6c6;
+  }
+  
+  
+  /* Game/ spill css */
+  #game-container {
+    margin-top: 50px;
+  }
+  
+  #prize {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .spin-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #4c89af;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+ 
+  
+  /* Spin Section Styles */
+  .spin-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .spin-section h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .spin-section p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Style for dropdown */
+  .dropdown-menu {
+    display: inline-block;
+  }
+  
+  
+/* Navbar Styles */
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3cb6c6;
+    height: 100px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #000000;
+    height: 50px;
+  }
+  
+  .nav-menu-canteen {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    height: 50px;
+  }
+  
+  .nav-menu-canteen a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Menu Container Styles */
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .menu-item {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .menu-item h3 {
+    color: #333;
+  }
+  
+  .menu-item p {
+    color: #666;
+  }
+  
+  .menu-item .dropdown-menu {
+    display: inline-block;
+  }
+  
+  .menu-item .dropdown-menu button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-item .dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+  }
+  
+  .menu-item .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .image-kantine {
+    position: relative;
+  }
+  
+  #oslometkantine {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rundede hjørner for bildecontaineren */
+  }
+  
+  .bildekantine {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-size: 14px;
+  }
+  
