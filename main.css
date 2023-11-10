@@ -184,8 +184,9 @@ nav li {
 /* SIDE 3 - TOPIC */
 
 #side3Bilde-DigitalCities{ /* Bilde "Digital Cities" på side 3 */
-    width: auto;
+    width: 100%;
     height: auto;
+
 
     /* max-height: 750px;
         min-height: 170px; */
@@ -200,10 +201,12 @@ nav li {
 
 .side3-førsteavsnitt{
     padding-right: 450px;
+    padding-top: 1000px;
 }
 
 .side3-andreavsnitt{
     padding-right: 450px;
+    padding-top: 25px;
 }
 
 .side3-tredjeavsnitt{
@@ -214,12 +217,8 @@ nav li {
     padding: 30px; /* Polstring. Luft mellom tekst og kant */
     outline-style: hidden;
     position: absolute;
-    top: 1070px; 
+    top: 1050px; 
     right: 75px;
-}
-
-.side3-tredjeavsnitt a:hover{
-    color: red;
 }
 
 .side3-fjerdeavsnitt{
@@ -230,13 +229,15 @@ nav li {
     padding: 30px; /* Polstring. Luft mellom tekst og kant */
     outline-style: hidden;
     position: absolute;
-    top: 1570px; 
+    top: 1470px; 
     right: 75px;
 }
 
 .side3-femteavsnitt{
     padding-right: 450px;
+    padding-top: 25px
 }
+
 
 .side3-sjetteavsnitt{
     width: 300px; /* Bredde på boks */
@@ -253,5 +254,55 @@ nav li {
 .side3-sjetteavsnitt a:hover{
 color: red;
 }
+
+
+.side3-data1100{
+    text-align: center;
+    font-size: 15;
+    font-family: Optima;
+    font-style: normal;
+    color: white;
+}
     
+.side3-hovedoverskrift{
+    text-align: center;
+    font-size: 60;
+    font-family: Optima;
+    font-weight: bold;
+    color: white;
+}
+
+.side3-dato{
+    text-align: center;
+    font-size: 15;
+    font-family: Optima;
+    font-weight: lighter;
+    font-style: italic;
+    color: white;
+}
+
+.side3-overskriftsboks{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 125%;
+    padding: 0%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.side3-tekstboks1{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0000008b;
+    width: 100%;
+    height: 100%;
+    top: 477;
+}
+
 
