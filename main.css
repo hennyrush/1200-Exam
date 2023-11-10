@@ -33,6 +33,7 @@ nav li {
     height: 50px;
     font-size: 40px;
     font-weight: bold;
+    font-family: Optima;
 }
 
 .nav-menu { /* Navbar elementers plassering */ 
@@ -46,13 +47,14 @@ nav li {
     color: #000000;
     text-decoration: none;
     font-size: 20px;
+    font-family: Optima;
 }
 .nav-menu a:hover { /*skygge over elementer når man rører dem */
     color: grey;
 }
 
 
-/*SIDE 1 */
+/*SIDE 1 INDEX */
 #index_image { /* bilde på index side */
     max-height: 750px;
     min-height: 170px;
@@ -89,30 +91,75 @@ nav li {
 
 }
 .index-tekstboks {
-    width: 600px;
+    width: 750px;
     height: 350px;
     border: 15px;
-    background-color: #C64C3C;
+    background-color: #20636ad4;
     padding: 20px;
-    outline-style: hidden;
     position: absolute;
     top: 280px;
     right: 0;
-    bottom: 1500px;
     text-align: left;
 }
 
 .index-tekstboks h2 {
-    font-weight: 400;
-    line-height: 10;
+    font-weight: 500;
+    line-height: 1;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Optima;
 }
 
 .index-tekstboks h3 {
-    font-weight: 300;
-    margin-bottom: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: Optima;
+ 
 }
 
+.info-boks {
+    right: 0;
+    left: 0;
+    background-color: blanchedalmond;
+    height: 350px;
+}
 
+.info-boks h3 {
+    font-weight: 400px;
+    font-size: 23px;
+    line-height: 8;
+    margin-left: 100px;
+    font-family: Optima;
+
+}
+
+.les-mer-boks {
+    height: 50px;
+    width: 200px;
+    left: 95px;
+    right: 30px;
+    position: absolute;
+    background-color: #3cb6c6;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.les-mer-boks h4{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.les-mer-boks a {
+    text-decoration: none;
+    color:#000000;
+}
+
+.les-mer-boks a:hover { /*skygge over elementer når man rører dem */
+    color: grey;
+}
 
 .bottom-nav { /*navbar på bunn */
     bottom: 0;
@@ -125,10 +172,12 @@ nav li {
     height: 150px;
     padding: 20px 100px; /* Adjust the padding as needed */
 }
+
 .bottom-nav li{ /*nederst navbar tekst */
     color: #000000;
     text-decoration: none;
     font-size: 15px;
+    font-family: Optima;
 }
     
 
