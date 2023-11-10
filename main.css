@@ -132,3 +132,77 @@ nav li {
 }
     
 
+/* SIDE 3 - TOPIC */
+
+#side3Bilde-DigitalCities{ /* Bilde "Digital Cities" på side 3 */
+    width: auto;
+    height: auto;
+
+    /* max-height: 750px;
+        min-height: 170px; */
+}
+
+.Bildekilde-DigitalCity{ /* Kilde til bilde om Digital Cities */
+    bottom: 8px;
+    left: 16px;
+    font-size: 25px;
+}
+
+
+.side3-førsteavsnitt{
+    padding-right: 450px;
+}
+
+.side3-andreavsnitt{
+    padding-right: 450px;
+}
+
+.side3-tredjeavsnitt{
+    width: 300px; /* Bredde på boks */
+    height: auto;
+    border: 15px;
+    background-color: #3cb6c6; /* Farge på boksen */
+    padding: 30px; /* Polstring. Luft mellom tekst og kant */
+    outline-style: hidden;
+    position: absolute;
+    top: 1070px; 
+    right: 75px;
+}
+
+.side3-tredjeavsnitt a:hover{
+    color: red;
+}
+
+.side3-fjerdeavsnitt{
+    width: 300px; /* Bredde på boks */
+    height: auto;
+    border: 15px;
+    background-color: #3cb6c6; /* Farge på boksen */
+    padding: 30px; /* Polstring. Luft mellom tekst og kant */
+    outline-style: hidden;
+    position: absolute;
+    top: 1570px; 
+    right: 75px;
+}
+
+.side3-femteavsnitt{
+    padding-right: 450px;
+}
+
+.side3-sjetteavsnitt{
+    width: 300px; /* Bredde på boks */
+    height: auto;
+    border: 15px;
+    background-color: #3cb6c6; /* Farge på boksen */
+    padding: 30px; /* Polstring. Luft mellom tekst og kant */
+    outline-style: hidden;
+    position: absolute;
+    top: 2050px; 
+    right: 75px;
+}
+
+.side3-sjetteavsnitt a:hover{
+color: red;
+}
+    
+
