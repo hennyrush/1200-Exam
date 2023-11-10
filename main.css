@@ -128,7 +128,7 @@ nav li {
 }
 
 .info-boks h3 {
-    font-weight: 400px;
+    font-weight: 200px;
     font-size: 23px;
     line-height: 8;
     margin-left: 100px;
@@ -142,7 +142,7 @@ nav li {
     left: 95px;
     right: 30px;
     position: absolute;
-    background-color: #3cb6c6;
+    background-color: #20636ad4;
     border-radius: 10px;
     text-align: center;
 }
@@ -150,15 +150,34 @@ nav li {
 .les-mer-boks h4{
     margin-top: 5px;
     font-weight: 600;
+    font-family: Optima;
 }
 
 .les-mer-boks a {
     text-decoration: none;
-    color:#000000;
+    color: white;
 }
 
 .les-mer-boks a:hover { /*skygge over elementer når man rører dem */
     color: grey;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#20636ad4;
+}
+
+img {
+    width: 50vw;
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    
 }
 
 .bottom-nav { /*navbar på bunn */
