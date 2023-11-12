@@ -203,98 +203,155 @@ img {
 /* SIDE 3 - TOPIC */
 
 #side3Bilde-DigitalCities{ /* Bilde "Digital Cities" på side 3 */
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
 
 .side3-overskriftsboks{ /* Boksen på størrelse med bilde */
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0;
+  position: relative; 
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
 }
 
 .side3-tekstboks1{ /* Elementene inni boksen */
-    position: absolute;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: Optima;
-    color: white;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: #0000006e;
-    flex-direction: column;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Optima;
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #0000006e;
+  flex-direction: column;
 }
-
-
 
 
 .Bildekilde-DigitalCity{ /* Kilde til bilde om Digital Cities */
-    bottom: 8px;
-    left: 16px;
-    font-size: 25px;
-}
-
-.side3-førsteavsnitt{
-    padding-right: 450px;
-    padding-top: 1000px;
-}
-
-.side3-andreavsnitt{
-    padding-right: 450px;
-    padding-top: 25px;
-}
-
-.side3-tredjeavsnitt{
-    width: 300px; /* Bredde på boks */
-    height: auto;
-    border: 15px;
-    background-color: #3cb6c6; /* Farge på boksen */
-    padding: 30px; /* Polstring. Luft mellom tekst og kant */
-    outline-style: hidden;
-    position: absolute;
-    top: 1050px; 
-    right: 75px;
-}
-
-.side3-fjerdeavsnitt{
-    width: 300px; /* Bredde på boks */
-    height: auto;
-    border: 15px;
-    background-color: #3cb6c6; /* Farge på boksen */
-    padding: 30px; /* Polstring. Luft mellom tekst og kant */
-    outline-style: hidden;
-    position: absolute;
-    top: 1470px; 
-    right: 75px;
-}
-
-.side3-femteavsnitt{
-    padding-right: 450px;
-    padding-top: 25px
+  bottom: 8px;
+  left: 16px;
+  font-size: 25px;
 }
 
 
-.side3-sjetteavsnitt{
-    width: 300px; /* Bredde på boks */
-    height: auto;
-    border: 15px;
-    background-color: #3cb6c6; /* Farge på boksen */
-    padding: 30px; /* Polstring. Luft mellom tekst og kant */
-    outline-style: hidden;
-    position: absolute;
-    top: 2050px; 
-    right: 75px;
+
+.side3-førsteavsnitt{ /*Elementene inni boksen */
+  padding-right: 27%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 27%;
+  font-size: 18;
+  line-height: 2.0;
+  font-family: Optima;
+  width: 100%;
+  height: auto;
+  background-color: #3cb6c68e;
+  
+}
+
+.side3-andreavsnitt{ /* Immediate reactions */
+  padding-right: 27%;
+  padding-top: 1%;
+  padding-left: 27%;
+  padding-bottom: 6%;
+  font-size: 18;
+  line-height: 2.0;
+  font-family: Optima;
+  width: 100%;
+  height: auto;
+  background-color: #3cb6c68e;
+}
+
+.side3-tredjeavsnitt{ /* Three positive aspects of digital cities */
+  width: 22%; /* Bredde på boks */
+  height: auto;
+  border: 15px;
+  background-color: #3cb6c6; /* Farge på boksen */
+  padding: 30px; /* Polstring. Luft mellom tekst og kant */
+  outline-style: hidden;
+  position: absolute;
+  top: 804px; 
+  right: 0%;
+  line-height: 1.5;
+  outline-style: double; /* Bokskant */
+
+}
+
+.side3-fjerdeavsnitt{ /* Three negative aspects */
+  width: 22%; /* Bredde på boks */
+  height: auto;
+  border: 15px;
+  background-color: #3cb6c6; /* Farge på boksen */
+  padding: 30px; /* Polstring. Luft mellom tekst og kant */
+  outline-style: hidden;
+  position: absolute;
+  top: 803px; 
+  left: 0%;
+  line-height: 1.5;
+  outline-style: double;
+}
+
+.side3Bilde-SmartCities{ /*Bilde "Smart Cities" på side 3 */
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.side3-OurOpinionsBildeboks { /* Boksen på størrelse med bilde */
+  position: relative; 
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+.side3-femteavsnitt{ /* Our opinions, elemtene inne i boksen */
+  position: absolute;
+  display: flex;
+  text-align: left;
+  font-family: Optima;
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #0000006e;
+  flex-direction: column;
+  line-height: 1.5;
+  justify-content: center;
+  font-size: 18;
+  padding-right: 57%;
+  padding-top: 2%;
+  padding-left: 1%;
+  align-items: left;
+  justify-content: left;
+}
+
+
+.side3-sjetteavsnitt{ /* More information */
+  width: 300px; /* Bredde på boks */
+  height: auto;
+  background-color: #3cb6c6; /* Farge på boksen */
+  padding: 45px; /* Polstring. Luft mellom tekst og kant */
+  outline-style: hidden;
+  position: absolute;
+  top: 25%; 
+  right: 15%;
+  outline-style: double;
+  line-height: 1.5;
 }
 
 .side3-sjetteavsnitt a:hover{
@@ -303,24 +360,25 @@ color: red;
 
 
 .side3-data1100{
-    text-align: center;
-    font-size: 15;
-    font-style: normal;
-    color: white;
+  text-align: center;
+  font-size: 15;
+  font-style: normal;
+  color: white;
 }
-    
+  
 .side3-hovedoverskrift{
-    text-align: center;
-    font-size: 60;
-    font-weight: bold;
+  text-align: center;
+  font-size: 60;
+  font-weight: bold;
 }
 
 .side3-dato{
-    text-align: center;
-    font-size: 15;
-    font-weight: lighter;
-    font-style: italic;
+  text-align: center;
+  font-size: 15;
+  font-weight: lighter;
+  font-style: italic;
 }
+
 
 
 
