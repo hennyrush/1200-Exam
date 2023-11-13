@@ -125,13 +125,13 @@ nav li { /* Fjerner punkt elementer */
     right: 0;
     left: 0;
     background-color: blanchedalmond;
-    height: 350px;
+    height: 200px;
 }
 
 .info-boks h3 { /* Tekst i tekstboksen som forteller om fakultet */
     font-weight: 200px;
     font-size: 28px;
-    line-height: 8;
+    line-height: 4;
     margin-left: 100px;
     font-family: Optima;
 
@@ -146,6 +146,7 @@ nav li { /* Fjerner punkt elementer */
     background-color: #20636ad4;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 60px;
     
 }
 
@@ -161,7 +162,7 @@ nav li { /* Fjerner punkt elementer */
 }
 
 .les-mer-boks a:hover { /* Skygge over elementer når man rører dem */
-    color: grey;
+    color: rgb(179, 177, 177);
 }
 
 .container { /* Område hvor bildet og tekst skal stå vedsiden av hverandre */
