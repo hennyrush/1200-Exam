@@ -273,13 +273,11 @@ font-family: Optima;
   flex-direction: column;
 }
 
-
 .Bildekilde-DigitalCity{ /* Kilde til bilde om Digital Cities */
   bottom: 8px;
   left: 16px;
   font-size: 25px;
 }
-
 
 
 .side3-førsteavsnitt{ /*Elementene inni boksen */
@@ -292,7 +290,7 @@ font-family: Optima;
   font-family: Optima;
   width: 100%;
   height: auto;
-  background-color: #3cb6c68e;
+  background-color: #ffffff8e;
   
 }
 
@@ -306,7 +304,7 @@ font-family: Optima;
   font-family: Optima;
   width: 100%;
   height: auto;
-  background-color: #3cb6c68e;
+  background-color: #ffffff8e;
 }
 
 .side3-tredjeavsnitt{ /* Three positive aspects of digital cities */
