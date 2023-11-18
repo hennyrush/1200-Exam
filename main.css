@@ -229,9 +229,15 @@ font-family: Optima;
     font-family: Optima;
 }
 
+/* SIDE 2 ACCESIBILITY */
 
+.accessibility-boks {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
     
-
 
 
 
