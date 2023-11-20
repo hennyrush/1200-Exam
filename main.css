@@ -451,225 +451,168 @@ color: red;
 
 /* LOCATION FUN PAGE ER UNDER HER*/
 
-/* Header Styles */
-.header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .header h1 {
-    margin: 0;
-  }
-  
-  .header p {
-    margin: 10px 0;
+/* Stil for unik introseksjon */
+.unique-intro-section {
+  background-color: rgba(200, 200, 200, 0.7);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 10cm;
+  height: 5cm;
+  overflow: hidden;
+}
+
+.unique-intro-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.unique-intro-section p {
+  margin-bottom: 10px;
+}
+
+/* Felles stiler for unik dropdown-knapper */
+.unique-dropdown-btn {
+  font-size: 30px;
+  background-color: #bbb;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Bakgrunnsendring ved hover for unik dropdown-knapper */
+.unique-dropdown-btn:hover {
+  background-color: #999;
+}
+
+/* Unike stiler for tilpasset meny */
+.unique-custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.unique-custom-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.unique-custom-animate-zoom {
+  animation: unique-custom-zoom 0.6s;
+}
+
+@keyframes unique-custom-zoom {
+  from {
+    transform: scale(0)
   }
 
-#drink-menu {
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
+  to {
+    transform: scale(1)
   }
-  
-  .menu-item-title {
-    color: #333;
-    text-align: center;
-  }
-  
-  .menu-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu-item {
-    margin: 10px 0;
-  }
-  
-  #creative-hot-menu {
-    background-color: #3cb6c6;
-  }
-  
-  
-  /* Game/ spill css */
-  #game-container {
-    margin-top: 50px;
-  }
-  
-  #prize {
-    display: none;
-    text-align: center;
-    font-size: 24px;
-    margin-top: 20px;
-  }
-  
-  .spin-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
+}
 
-  /* Dropdown Button */
-.dropbtn {
-    background-color: #4c89af;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Dropdown Content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color on hover */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+.unique-custom-modal-header {
+  padding: 2px 16px;
+  background-color: #989898;
+  color: white;
+}
 
- 
-  
-  /* Spin Section Styles */
-  .spin-section {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .spin-section h2 {
-    color: #333;
-    font-size: 24px;
-  }
-  
-  .spin-section p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+.unique-custom-close-button {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  /* Style for dropdown */
-  .dropdown-menu {
-    display: inline-block;
-  }
-  
-  
-/* Navbar Styles */
-nav {
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3cb6c6;
-    height: 100px;
-  }
-  
-  .logo a {
-    text-decoration: none;
-    color: #000000;
-    height: 50px;
-  }
-  
-  .nav-menu-canteen {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    height: 50px;
-  }
-  
-  .nav-menu-canteen a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  /* Menu Container Styles */
-  .menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #e0e0e0;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  .menu-item {
-    width: 300px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  
-  .menu-item h3 {
-    color: #333;
-  }
-  
-  .menu-item p {
-    color: #666;
-  }
-  
-  .menu-item .dropdown-menu {
-    display: inline-block;
-  }
-  
-  .menu-item .dropdown-menu button {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .menu-item .dropdown-menu a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 12px 16px;
-  }
-  
-  .menu-item .dropdown-menu a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .image-kantine {
-    position: relative;
-  }
-  
-  #oslometkantine {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Rundede hjørner for bildecontaineren */
-  }
-  
-  .bildekantine {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    color: white;
-    font-size: 14px;
-  }
-  
+.unique-custom-close-button:hover,
+.unique-custom-close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.unique-custom-modal-body {
+  padding: 20px;
+}
+
+/* Unike stiler for kontaktmodal */
+#uniqueContact {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.unique-custom-modal.black {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.unique-custom-container {
+  padding: 16px;
+}
+
+.unique-custom-input,
+.unique-custom-button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.unique-custom-input,
+.unique-custom-button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.unique-custom-button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.unique-custom-button:hover {
+  background-color: #555;
+}
+
+/* Unike stiler for deilig matbilde */
+.unique-deliciousfood-image {
+  background-image: url('images/delikatmat.jpeg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  z-index: -1;
+}
+
+.unique-bilde-referanse {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size: 14px;
+  z-index: 1;
+}
