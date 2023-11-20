@@ -69,12 +69,11 @@ nav li { /* Fjerner punkt elementer i nav bar */
 
 /*SIDE 1 INDEX */
 #index_image { /* Første bilde på index side */
-    max-height: 750px;
-    min-height: 170px;
+    height: 750px;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     vertical-align: bottom;
-    width: 100%;
 }
 
 .image-container{ /* Denne klassen brukes til å stilisere en "container" som inneholder tekst nederst på første bilde */
@@ -164,7 +163,7 @@ nav li { /* Fjerner punkt elementer i nav bar */
     color: #fff;
 }
 
-.container { /* En "container" som definerer område der et bilde og tekst skal plasserers ved siden av hverandre */
+.container { /* En "container" som definerer område der bilde nr 2 og tekst skal plasserers ved siden av hverandre */
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -234,13 +233,37 @@ font-family: Optima;
 
 /* SIDE 2 ACCESIBILITY */
 
-.accessibility-boks {
-  width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
+.header-side2 h1 {
+justify-content: center;
 }
-    
+
+.testresultat-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#ffffff3c;
+}
+
+.resultat-bilde {
+  margin: 10px;
+
+}
+
+.resultat-bilde img {
+  width: 50vw;
+    height: 100vh;
+    display: block;
+    object-fit:contain;
+    object-position: center;
+}
+
+.resultat-tekst {
+  font-size: 30px;
+  font-family: Optima;
+  line-height: 40px;
+}
 
 
 
