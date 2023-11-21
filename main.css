@@ -44,9 +44,7 @@ nav li { /* Fjerner punkt elementer i nav bar */
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-top: 50;
   margin-bottom: 4px;
-
 }
 
 .nav-menu { /* Nav bar tekstelementers plassering */ 
@@ -142,7 +140,6 @@ nav li { /* Fjerner punkt elementer i nav bar */
   border-radius: 10px;
   text-align: center;
   margin-bottom: 60px;
-    
 }
 
 .les-mer-boks h4{ /* Header til liten info knapp */
