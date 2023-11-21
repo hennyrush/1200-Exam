@@ -75,13 +75,13 @@ nav li { /* Fjerner punkt elementer i nav bar */
     vertical-align: bottom;
 }
 
-.image-container{ /* Denne klassen brukes til å stilisere en "container" som inneholder tekst nederst på første bilde */
+.indeximage-container{ /* Denne klassen brukes til å stilisere en "container" som inneholder tekst nederst på første bilde */
     position: relative;
     text-align: center;
     color:#fff;
   }
 
-.bilde-kilde1{ /* Stiliserer tekstelementet inn i containeren image-container */
+.indeximage-kilde1{ /* Stiliserer tekstelementet inn i containeren image-container */
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -162,7 +162,7 @@ nav li { /* Fjerner punkt elementer i nav bar */
     color: #fff;
 }
 
-.container { /* En "container" som definerer område der bilde nr 2 og tekst skal plasserers ved siden av hverandre */
+.ellengleditschs-container { /* En "container" som definerer område der bilde nr 2 og tekst skal plasserers ved siden av hverandre */
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -207,7 +207,7 @@ font-family: Optima;
   color:#fff;
 }
 
-.footer-bar { /*navbar på bunn */
+.footer-bar { /* Navbaren på bunn */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -233,7 +233,17 @@ font-family: Optima;
 
 /* SIDE 2 ACCESIBILITY */
 
-.header-side2 h1 {
+.headerside2-container { /* Container for header, slik at den har samme bakgrunn som resten av containerene på siden  */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3cb6c688;
+}
+
+
+.header-side2 h1 { /* Stilisering av header */
 text-align: center;
 margin-top: 60px;
 margin-bottom: 60px;
@@ -241,22 +251,22 @@ font-size: 50px;
 font-family: Optima;
 }
 
-.resultatside1-container{ /*En "container"som definerer området med et bilde og tekst */
+.resultatside1-container { /*En "container" som definerer området med et bilde og tekst */
   min-height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blanchedalmond;
+  background-color: #3cb6c688;
 }
 
-.resultat-bilde1{ /* Bilde på venstre side i containeren */
+.resultat-bilde1 { /* Bilde på venstre side i containeren */
   position: relative;
   align-items: center;
   margin: 50px;
 }
 
-.resultat-bilde1 img{
+.resultat-bilde1 img {  /* Bilde 1 plassering i resultatside1-container */
   width: 50vw;
   height: auto;
   display: block;
@@ -264,36 +274,36 @@ font-family: Optima;
   object-position: center;
 }
 
-.tekstresultat-side1 h2{
+.tekstresultat-side1 h2 { /* Stilisering av header 2 */
   font-size: 30px;
   line-height: 1.5;
   font-family: Optima;
   text-align: center;
 }
 
-.tekstresultat-side1 p{
+.tekstresultat-side1 p { /* Stilisering av paragraf tekst */
   font-size: 20px;
   line-height: 1.5;
   font-family: Optima;
   padding: 25;
 }
 
-.resultatside2-container{ /* En "container" som definerer området med et bilde og tekst */
+.resultatside2-container { /* En "container" som definerer området med et bilde og tekst */
   min-height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blanchedalmond;
+  background-color: #3cb6c688;;
 }
 
-.resultat-bilde2{
+.resultat-bilde2 { /* Bilde på venstre side i resultatside2-containeren */
   position: relative;
   align-items: center;
   margin: 50px;
 }
 
-.resultat-bilde2 img{
+.resultat-bilde2 img { /* Bilde 2 plassering i resultatside2-container */
   width: 50vw;
   height: auto;
   display: block;
@@ -301,14 +311,14 @@ font-family: Optima;
   object-position: center;
 }
 
-.tekstresultat-side2 h2{
+.tekstresultat-side2 h2 { /* Stilisering av header 2 avsnitt 2  */
   font-size: 30px;
   line-height: 1.5;
   font-family: Optima;
   text-align: center;
 }
 
-.tekstresultat-side2 p{
+.tekstresultat-side2 p { /* Stilisering av paragraf tekst */
   font-size: 20px;
   line-height: 1.5;
   font-family: Optima;
@@ -316,22 +326,22 @@ font-family: Optima;
 }
 
 
-.resultatside3-container{ /* En "container" som definerer området med et bilde og tekst */
+.resultatside3-container { /* En "container" som definerer området med et bilde og tekst */
   min-height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blanchedalmond;
+  background-color: #3cb6c688;;
 }
 
-.resultat-bilde3{ /* Bilde på venstre side i containeren */
+.resultat-bilde3 { /* Bilde 3 på venstre side i containeren */
   position: relative;
   align-items: center;
   margin: 50px;
 }
 
-.resultat-bilde3 img{ /* Justerer bildet og plasserer det gunstig for å dekke container */
+.resultat-bilde3 img { /* Justerer bildet og plasserer det gunstig for å dekke resultatside3-container */
   width: 50vw;
   height: auto;
   display: block; 
@@ -340,36 +350,36 @@ font-family: Optima;
 }
 
 
-.tekstresultat-side3 h2{ /* Stiliserer overskrift */
+.tekstresultat-side3 h2 { /* Stiliserer overskrift på avsnitt 3*/
   font-size: 30px;
   line-height: 1.5;
   font-family: Optima;
   text-align: center;
 }
 
-.tekstresultat-side3 p{ /* Stiliserer tekst */
+.tekstresultat-side3 p { /* Stiliserer paragraf avsnitt 3 */
   font-size: 20px;
   line-height: 1.5;
   font-family: Optima;
   padding: 25;
 }
 
-.resultatside4-container{ /* En "container" som definerer området med et bilde og tekst */
+.resultatside4-container { /* En "container" som definerer området med et bilde og tekst */
   min-height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blanchedalmond;
+  background-color: #3cb6c688;;
 }
 
-.resultat-bilde4{ /* Bilde på venstre side i containeren */
+.resultat-bilde4 { /* Bilde 4 på venstre side i containeren */
   position: relative;
   align-items: center;
   margin: 50px;
 }
 
-.resultat-bilde4 img{
+.resultat-bilde4 img { /* Justerer bildet og plasserer det gunstig for å dekke resultatside4-container */
   width: 50vw;
   height: auto;
   display: block;
@@ -377,14 +387,14 @@ font-family: Optima;
   object-position: center;
 }
 
-.tekstresultat-side4 h2{
+.tekstresultat-side4 h2 { /* Stiliserer header på avsnitt fire */
   font-size: 30px;
   line-height: 1.5;
   font-family: Optima;
   text-align: center;
 }
 
-.tekstresultat-side4 p{
+.tekstresultat-side4 p { /* Stiliserer paragraf avsnitt 4 */
   font-size: 20px;
   line-height: 1.5;
   font-family: Optima;
@@ -394,7 +404,7 @@ font-family: Optima;
 
 
 /* SIDE 3 - TOPIC */
-#topicalbilde-digitalcities{ /* Bilde "Digital Cities" på side 3 */
+#topicalbilde-digitalcities { /* Bilde "Digital Cities" på side 3 */
   width: 100%;
   height: 83%;
   position: relative;
@@ -455,7 +465,7 @@ font-family: Optima;
   font-family: Optima;
   width: 100%;
   height: auto;
-  background-color: blanchedalmond;
+  background-color: white;
   position: relative;
   border-top: 3px solid #000000;
 }
@@ -470,7 +480,7 @@ font-family: Optima;
   font-family: Optima;
   width: 100%;
   height: auto;
-  background-color: blanchedalmond;
+  background-color: white;
   position: relative;
 }
 
@@ -487,8 +497,9 @@ font-family: Optima;
   top: 773px; 
   right: 0%;
   line-height: 1.9;
-  color: blanchedalmond;
+  color: white;
   border-radius: 10px;
+  font-family: Optima;
 }
 
 .topical-positive h3{ /* Stiliserer overskrift */
@@ -500,7 +511,7 @@ font-family: Optima;
   height: auto;
   width: 250px;
   position: absolute;
-  background-color: blanchedalmond;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
   box-shadow: 10px 10px 5px black;
@@ -512,12 +523,12 @@ font-family: Optima;
   left: 55;
 }
 
-.topical-lenkeimportant a{
+.topical-lenkeimportant a{ /* Fjerner link utseende, og erstatter med svar tekst uten linje under */
   text-decoration: none;
   color: black;
 }
 
-.topical-lenkeimportant a:hover{
+.topical-lenkeimportant a:hover{ /* Skygge over linkelementer i nav bar når man rører dem */
   color: #20636ad4;
 }
 
@@ -533,8 +544,9 @@ font-family: Optima;
   position: absolute;
   top: 773px; 
   line-height: 1.9;
-  color: blanchedalmond;
+  color: white;
   border-radius: 10px;
+  font-family: Optima;
 }
 
 .topical-negative h3{
@@ -546,7 +558,7 @@ font-family: Optima;
   height: auto;
   width: 300px;
   position: absolute;
-  background-color: blanchedalmond;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
   right: 35;
@@ -563,7 +575,7 @@ font-family: Optima;
   color: black;
 }
 
-.topical-lenkenegative a:hover{
+.topical-lenkenegative a:hover{ /* Skygge over linkelementer i nav bar når man rører dem */
   color: #20636ad4;
 }
 
@@ -573,7 +585,7 @@ font-family: Optima;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blanchedalmond;
+  background-color: white;
   border-top: 2px solid black;
 }
 
@@ -636,28 +648,29 @@ font-family: Optima;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1.5;
+  font-family: Optima;
 }
 
 .topical-sjetteavsnitt h3{ /* Stiliserer overskrift */
   text-align: center;
   font-size: 25;
-  color: blanchedalmond;
+  color: white;
 }
 
 .topical-sjetteavsnitt ul{ /* Stiliserer listeelementer */
   text-align: center;
-  color: blanchedalmond;
+  color: white;
   list-style: none;
 }
 
 .topical-sjetteavsnitt a{ /* Stiliserer lenkene */
   text-align: center;
-  color: blanchedalmond;
+  color: white;
   font-size: 13;
   line-height: 2.0;
 }
 
-.topical-sjetteavsnitt a:hover{
+.topical-sjetteavsnitt a:hover{ 
   color: #20636ad4;
 }
 
@@ -670,7 +683,7 @@ font-family: Optima;
   color: white;
   text-decoration: none;
   padding: 10px 20px; /* Tilpass polstring etter behov */
-  background-color: rgba(138, 43, 226, 0.7); /* Mørk lavendel med gjennomsiktig effekt */
+  background-color: rgba(18, 107, 21, 0.7); /* Mørk lavendel med gjennomsiktig effekt */
   border: none;
   border-radius: 5px; /* Runde hjørner */
   cursor: pointer;
@@ -679,7 +692,7 @@ font-family: Optima;
 
 /* Bakgrunnsendring ved hover for navigasjonsknappen */
 .unique-navbar a:hover {
-  background-color: rgba(138, 43, 226, 1); /* Mørkere lavendel ved hover */
+  background-color: rgba(18, 107, 21, 0.7); /* Mørkere lavendel ved hover */
 }
 
 /* Firkantede knapper og Dropdown-knapper */
@@ -688,7 +701,7 @@ font-family: Optima;
   width: 4cm;
   height: 4cm;
   font-size: 16px;
-  background-color: rgba(138, 43, 226, 0.7); /* Mørk lavendel med gjennomsiktig effekt */
+  background-color: rgba(18, 107, 21, 0.7); /* Mørk lavendel med gjennomsiktig effekt */
   color: white;
   border: none;
   border-radius: 5px;
@@ -703,7 +716,7 @@ font-family: Optima;
 /* Bakgrunnsendring ved hover for firkantede og dropdown-knapper */
 .unique-square-btn:hover,
 .unique-dropdown-btn:hover {
-  background-color: rgba(138, 43, 226, 1); /* Mørkere lavendel ved hover */
+  background-color: rgba(18, 107, 21, 0.7); /* Mørkere lavendel ved hover */
 }
 
 /* Dropdown-stiler */
@@ -717,7 +730,7 @@ font-family: Optima;
 .unique-dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(138, 43, 226, 0.7); /* Gjennomsiktig mørk lavendel bakgrunn */
+  background-color: rgba(18, 107, 21, 0.7); /* Gjennomsiktig mørk lavendel bakgrunn */
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -747,7 +760,7 @@ font-family: Optima;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(138, 43, 226, 0.7); /* Gjennomsiktig mørk lavendel bakgrunn */
+  background-color: rgba(18, 107, 21, 0.7); /* Gjennomsiktig mørk lavendel bakgrunn */
   width: 80%;
   margin: 2% auto; /* Redusert margin for å plassere nærmere toppen */
   padding: 20px;
