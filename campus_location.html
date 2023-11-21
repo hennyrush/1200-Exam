@@ -1,59 +1,99 @@
+<!-- Dokumenttype-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Meta-tags for tegnsett og konfigurering av visningsområdet -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unique Canteen Menus</title>
+  <!-- Tittel på nettsiden -->
+  <title>Canteen Menues</title>
+  <!-- Lenke til ekstern stilark (main.css) -->
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-  <section class="unique-intro-section">
-    <h2>Choose your menu</h2>
-    <p>Explore our delicious menus and make your selection.</p>
+<!-- Navigasjonslinje (navbar) med unikt navn -->
+<div class="unique-navbar">
+  <!-- Lenker i navigasjonslinjen med unike navn -->
+  <a href="index.html" class="unique-navknapp">Back to Home</a>
+  <!-- Legg til flere lenker etter behov -->
+</div>
+
+
+   <!-- Intro seksjon -->
+   <section class="unique-intro-section">
+    <!-- Overskrift for intro -->
+    <h2>Welcome to OsloMet P35 Canteen!</h2>
+    <!-- Avsnitt for å lokke kunder -->
+    <p>Discover our healthy menu options designed for students, or contact us for renting the canteen!</p>
   </section>
 
-  <div class="unique-dropdown">
-    <button class="unique-dropdown-btn" onclick="uniqueShowCustomMenu()">Menu</button>
-    <div class="unique-dropdown-content">
-    </div>
+
+ <!-- Nedtrekksmeny for å vise menyvalg -->
+<div class="unique-dropdown">
+  <!-- Knapp for å utløse visning av tilpasset meny -->
+  <button class="unique-square-btn" onclick="uniqueShowCustomMenu()">Menu</button>
+  <!-- Innholdscontainer for nedtrekksmenyen -->
+  <div class="unique-dropdown-content">
+    <!-- Den faktiske menyen vil bli lagt til her -->
   </div>
-  
-  <div class="unique-dropdown">
-    <button class="unique-dropdown-btn" onclick="uniqueShowContactModal()">Contact</button>
-    <div class="unique-dropdown-content">
-    </div>
+</div>
+
+<!-- Dropdown-meny for kontakt -->
+<div class="unique-dropdown unique-navbar">
+  <!-- Knapp for å vise kontaktmodalen -->
+  <button class="unique-square-btn" onclick="uniqueShowContactModal()">Contact</button>
+  <!-- Dropdown-innhold -->
+  <div class="unique-dropdown-content">
+    <!-- Innholdet i dropdown-menyen vil legges til her -->
   </div>
-  
- <!-- Kode for pop-upen til menyen -->
+</div>
+
+
+  <!-- Kode for pop-upen til menyen -->
 <div id="uniqueCustomMenu" class="unique-custom-modal">
+  <!-- modal innhold -->
   <div class="unique-custom-modal-content unique-custom-animate-zoom">
+    <!-- Modal-header -->
     <div class="unique-custom-modal-header">
+      <!-- Overskrift for menyen -->
+      <h1>Menu Canteen P35</h1>
+      <!-- Lukkeknapp -->
       <span onclick="uniqueHideCustomMenu()" class="unique-custom-close-button">&times;</span>
-      <h1>Special Menu</h1>
     </div>
-      <div class="unique-custom-modal-header">
+    <!-- Starters-seksjon -->
+    <div class="unique-custom-modal-header">
+      <!-- Overskrift for forretter -->
       <h1>Starters</h1>
     </div>
     <div class="unique-custom-modal-body">
+      <!-- Elementer for forretter -->
       <h5>Baguette with Ham and Cheese <b>25kr</b></h5>
       <h5>Chicken Salad <b>35kr</b></h5>
       <h5>Bread and Butter <b>10kr</b></h5>
     </div>
+    <!-- Hot Meals-seksjon -->
     <div class="unique-custom-modal-header">
+      <!-- Overskrift for varme måltider -->
       <h1>Hot Meals</h1>
     </div>
     <div class="unique-custom-modal-body">
+      <!-- Elementer for varme måltider -->
       <h5>Grilled Fish and Potatoes <b>85kr</b></h5>
       <h5>Italian Pizza <b>55kr</b></h5>
       <h5>Veggie Pasta <b>40kr</b></h5>
       <h5>Chicken and Potatoes <b>65kr</b></h5>
       <h5>Deluxe Burger <b>50kr</b></h5>
     </div>
+    <!-- Something Small-seksjon -->
     <div class="unique-custom-modal-header">
+      <!-- Overskrift for småretter -->
       <h1>Something Small</h1>
     </div>
     <div class="unique-custom-modal-body">
+      <!-- Elementer for småretter -->
       <h5>Fruit Salad <b>25kr</b></h5>
       <h5>Nuts <b>20kr</b></h5>
       <h5>Energy bar <b>20kr</b></h5>
@@ -62,34 +102,63 @@
   </div>
 </div>
 
-<!-- Her er koden for kontakt -->
+
+
+<!-- Dette er HTML-koden for kontakt skjerma -->
 <div id="uniqueContact" class="unique-custom-modal">
-  <div class="unique-custom-modal-content unique-custom-animate-zoom">
-    <div class="unique-custom-container unique-custom-black">
-      <button class="unique-dropbtn" onclick="uniqueShowContactModal()">Contact</button>
-      <span onclick="uniqueHideContactModal()" class="unique-custom-close-button">&times;</span>
-      <h1>Contact-do you want to rent the canteen?</h1>
+  <!-- innhold -->
+  <div class="unique-custom-modal-content unique-animate-zoom">
+    <!-- header for contact skjema -->
+    <div class="unique-custom-container unique-custom-header">
+      <!-- Lukkeknapp -->
+      <span onclick="uniqueHideContactModal()" class="unique-close-button">&times;</span>
+      <!-- Overskrift -->
+      <h1>Contact - Do you want to rent the canteen?</h1>
     </div>
-    <div class="unique-custom-container">
-      <p>Book our canteen for events such as graduation ceremonies, conferences, and special occasions. Whether it's reserving a space, inquiring about our services, or discussing your event needs, we're here to make your gatherings memorable:</p>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="unique-custom-input unique-custom-padding-16 unique-custom-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="unique-custom-input unique-custom-padding-16 unique-custom-border" type="number" placeholder="How many people" required name="People"></p>
-        <p><input class="unique-custom-input unique-custom-padding-16 unique-custom-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-        <p><textarea class="unique-custom-input unique-custom-padding-16 unique-custom-border" placeholder="Message \ Special requirements" required name="Message"></textarea></p>
-        <p><label><input type="checkbox" name="bookingRequest"> I am interested in booking the canteen for an event</label></p>
-        <p><button class="unique-custom-button" type="submit">SEND MESSAGE</button></p>
+    <!-- body for contact-->
+    <div class="unique-custom-container unique-custom-body">
+      <!-- Instro-tekst-->
+      <p>Book our canteen for events such as graduation ceremonies, conferences, and special occasions. Whether it's reserving a space, inquiring about our services, or discussing the needs of your event, we are here to make your gatherings memorable:</p>
+      <!-- Skjema -->
+      <form onsubmit="return false;">
+        <!-- Her skrives navn inn-->
+        <div class="unique-form-group">
+          <input class="unique-custom-input" type="text" placeholder="Navn" required name="Navn">
+        </div>
+        <!-- Antall personer blir registert i data -->
+        <div class="unique-form-group">
+          <input class="unique-custom-input" type="number" placeholder="How many people?" required name="Personer">
+        </div>
+        <!-- Dato og tid- inndatafeltet der det registreres -->
+        <div class="unique-form-group">
+          <input class="unique-custom-input" type="datetime-local" placeholder="Dato og tid" required name="dato" value="2020-11-16T20:00">
+        </div>
+        <!-- Dette er hvor data er for melding -->
+        <div class="unique-form-group">
+          <textarea class="unique-custom-input" placeholder="Message \ Special requirements" required name="Melding"></textarea>
+        </div>
+        <!-- Sjekkboks for booking -->
+        <div class="unique-form-group">
+          <label><input type="checkbox" name="bookingRequest"> I am interested in renting the canteen for an event.</label>
+        </div>
+        <!-- Send melding-knapp -->
+        <div class="unique-form-group">
+          <button class="unique-custom-button" onclick="sendMessage()">SEND MESSAGE</button>
+        </div>
       </form>
     </div>
   </div>
 </div>
 
+<!-- Kode for bakgrunnsbilde -->
 <div class="unique-deliciousfood-image">
-  <img src="images/delikatmat.jpeg" alt="MatBilde" id="uniqueDelikatmat_image" />
+  <img src="images/delikatmat.jpeg" alt="MatBilde" id="uniqueDelikatmat_image" class="unique-img">
   <div class="unique-bilde-referanse">Photo: wallhere.com</div>
-  <!-- Dette er en HTML-kommentar. Kommentarer brukes til å gi informasjon eller beskrivelser i koden. -->
 </div>
 
+
+
+<!-- Under her ligger all javascript, funskjoner for at koden overfor skal fungere med rett funskjonalitet -->
 <script src="unique_script.js"></script>
 <script>
   // Funksjon for å vise tilpasset meny
@@ -121,6 +190,12 @@
     var contactModal = document.getElementById('uniqueContact');
     contactModal.style.display = 'none';
   }
+
+  // Funksjon for pop-up message slik at bruker får beskjed om at reservasjon ikke blir sendt
+  function sendMessage() {
+  // Display a pop-up message
+  alert("Thank you for your interest! This form is part of a web design, and you cannot actually book the canteen.");
+}
 </script>
 
 </body>

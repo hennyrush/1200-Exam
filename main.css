@@ -667,43 +667,119 @@ font-family: Optima;
 
 /* LOCATION FUN PAGE ER UNDER HER- lagt til unique */
 
-/* Stil for unik introseksjon */
-.unique-intro-section {
-  background-color: rgba(200, 200, 200, 0.7);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  width: 10cm;
-  height: 5cm;
-  overflow: hidden;
-}
 
-.unique-intro-section h2 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
-}
-
-.unique-intro-section p {
-  margin-bottom: 10px;
-}
-
-/* Felles stiler for unik dropdown-knapper */
-.unique-dropdown-btn {
-  font-size: 30px;
-  background-color: #bbb;
-  color: #333;
+/* Stil for navigasjonsknappen */
+.unique-navbar a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Tilpass polstring etter behov */
+  background-color: rgba(138, 43, 226, 0.7); /* Mørk lavendel med gjennomsiktig effekt */
   border: none;
-  border-radius: 8px;
+  border-radius: 5px; /* Runde hjørner */
   cursor: pointer;
-  margin-right: 10px;
+  transition: background-color 0.3s;
 }
 
-/* Bakgrunnsendring ved hover for unik dropdown-knapper */
+/* Bakgrunnsendring ved hover for navigasjonsknappen */
+.unique-navbar a:hover {
+  background-color: rgba(138, 43, 226, 1); /* Mørkere lavendel ved hover */
+}
+
+
+
+
+
+
+
+/* Firkantede knapper og Dropdown-knapper */
+.unique-square-btn,
+.unique-dropdown-btn {
+  width: 4cm;
+  height: 4cm;
+  font-size: 16px;
+  background-color: rgba(138, 43, 226, 0.7); /* Mørk lavendel med gjennomsiktig effekt */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px; /* Legg til litt margin for avstand mellom knappene */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+/* Bakgrunnsendring ved hover for firkantede og dropdown-knapper */
+.unique-square-btn:hover,
 .unique-dropdown-btn:hover {
-  background-color: #999;
+  background-color: rgba(138, 43, 226, 1); /* Mørkere lavendel ved hover */
 }
 
-/* Unike stiler for tilpasset meny */
+/* Dropdown-stiler */
+.unique-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.unique-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(138, 43, 226, 0.7); /* Gjennomsiktig mørk lavendel bakgrunn */
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 4cm; /* Juster bredden til 4 cm */
+}
+
+.unique-dropdown-content a {
+  color: white; /* Endret tekstfarge til hvit */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.unique-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.unique-dropdown:hover .unique-dropdown-content {
+  display: flex;
+  flex-direction: row; /* Endret fra blokk til rad for å plassere elementer ved siden av hverandre */
+}
+
+/* Introseksjon-stiler */
+.unique-intro-section {
+  display: flex;
+  flex-direction: column; /* Endre fra rad til kolonne for å plassere elementene over hverandre */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(138, 43, 226, 0.7); /* Gjennomsiktig mørk lavendel bakgrunn */
+  width: 80%;
+  margin: 2% auto; /* Redusert margin for å plassere nærmere toppen */
+  padding: 20px;
+  border: none; /* Fjernet grense for å matche stilen på knappene */
+  border-radius: 5px; /* Runde hjørner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Legg til en subtil skyggeeffekt */
+  font-family: 'Arial', sans-serif; /* Bruk samme skrifttype */
+}
+
+/* Stil for overskrift i Introseksjon */
+.unique-intro-section h2 {
+  color: white; /* Tekstfarge */
+}
+
+/* Stil for avsnitt i Introseksjon */
+.unique-intro-section p {
+  color: white; /* Tekstfarge */
+}
+
+
+
+/* Custom Menu Modal Styles */
 .unique-custom-modal {
   display: none;
   position: fixed;
@@ -714,56 +790,92 @@ font-family: Optima;
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 60px;
 }
 
+/* Stil for innholdet i Custom Menu Modal */
 .unique-custom-modal-content {
-  background-color: #fefefe;
-  margin: 5% auto;
+  background-color: #fefefe; /* Lys grå farge for en elegant design */
+  margin: 10% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #989898; /* Lett grense for en renere look */
   width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Legg til en subtil skyggeeffekt */
+  border-radius: 5px; /* Runde hjørner */
 }
 
-.unique-custom-animate-zoom {
-  animation: unique-custom-zoom 0.6s;
-}
-
-@keyframes unique-custom-zoom {
-  from {
-    transform: scale(0)
-  }
-
-  to {
-    transform: scale(1)
-  }
-}
-
+/* Stil for header i Custom Menu Modal */
 .unique-custom-modal-header {
-  padding: 2px 16px;
-  background-color: #989898;
-  color: white;
+  display: flex;
+  justify-content: space-between; /* Plasserer elementer på hver sin side */
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #888; /* Samme farge som "SEND MESSAGE" knappen */
+  border-radius: 5px; /* Runde hjørner */
 }
 
-.unique-custom-close-button {
-  float: right;
+/* Stil for overskrift i Custom Menu Modal */
+.unique-custom-modal-header h1 {
+  color: #333; /* Tekstfarge */
+}
+
+/* Stil for lukkeknapp i Custom Menu Modal */
+.unique-close-button {
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+  color: #555; /* Farge for kontrast */
 }
 
-.unique-custom-close-button:hover,
-.unique-custom-close-button:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+/* Bakgrunnsendring ved hover for lukkeknapp i Custom Menu Modal */
+.unique-close-button:hover,
+.unique-close-button:focus {
+  color: #333; /* Mørkere farge ved hover for bedre synlighet */
 }
 
+/* Stil for Special Menu i Custom Menu Modal */
+.unique-special-menu {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Tekstfarge */
+}
+
+/* Stil for kroppen i Custom Menu Modal */
 .unique-custom-modal-body {
   padding: 20px;
 }
 
-/* Unike stiler for kontaktmodal */
+/* Animasjon for zoomeffekt i Custom Menu Modal */
+.unique-animate-zoom {
+  animation: unique-zoom 0.6s;
+}
+
+/* Keyframes for zoomeffekt i Custom Menu Modal */
+@keyframes unique-zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+/* Stil for body (felles for alle sider) */
+.unique-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Setter høyden til 100% av visningsvinduet */
+  margin: 0; /* Fjerner standardkroppsmarginer */
+}
+
+/* Kontaktmodal Stiler */
 #uniqueContact {
   display: none;
   position: fixed;
@@ -775,60 +887,121 @@ font-family: Optima;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.unique-custom-modal.black {
-  background-color: black;
-  color: white;
+/* Stil for innholdet i Kontaktmodal */
+#uniqueContact .unique-custom-modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #989898;
+  width: 80%;
+}
+
+/* Stil for container i Kontaktmodal */
+#uniqueContact .unique-custom-container {
+  margin-bottom: 20px;
+}
+
+/* Stil for header i Kontaktmodal */
+#uniqueContact .unique-custom-header {
   text-align: center;
   padding: 15px;
+  border: 1px solid #888; /* Samme farge som "SEND MESSAGE" knappen */
+  border-radius: 5px; /* Runde hjørner */
 }
 
-.unique-custom-container {
-  padding: 16px;
-}
-
-.unique-custom-input,
-.unique-custom-button {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
-.unique-custom-input,
-.unique-custom-button {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 10px;
-}
-
-.unique-custom-button {
-  background-color: #333;
-  color: #fff;
+/* Stil for lukkeknapp i Kontaktmodal */
+#uniqueContact .unique-close-button {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.unique-custom-button:hover {
-  background-color: #555;
+/* Stil for lukkeknapp ved hover i Kontaktmodal */
+#uniqueContact .unique-close-button:hover,
+#uniqueContact .unique-close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* Unike stiler for deilig matbilde */
+/* Stil for overskrift i Kontaktmodal */
+#uniqueContact h1 {
+  color: #000; /* Svart tekstfarge */
+}
+
+/* Stil for tekst i Kontaktmodal */
+#uniqueContact p {
+  color: #666; /* Grå tekstfarge */
+}
+
+/* Stil for skjema i Kontaktmodal */
+#uniqueContact form {
+  margin-top: 20px;
+}
+
+/* Stil for gruppe i Kontaktmodal */
+#uniqueContact .unique-form-group {
+  margin-bottom: 15px;
+}
+
+/* Stil for input i Kontaktmodal */
+#uniqueContact .unique-custom-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Stil for tekstområde i Kontaktmodal */
+#uniqueContact textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Stil for label i Kontaktmodal */
+#uniqueContact label {
+  display: block;
+}
+
+/* Stil for knapp i Kontaktmodal */
+#uniqueContact .unique-custom-button {
+  background-color: #888; /* Samme farge som "SEND MESSAGE" knappen */
+  color: #fff; /* Hvit tekstfarge */
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Stil for knapp ved hover i Kontaktmodal */
+#uniqueContact .unique-custom-button:hover {
+  background-color: #989898; /* Grå ved hover */
+}
+
+/* Stil for bilde */
 .unique-deliciousfood-image {
-  background-image: url('images/delikatmat.jpeg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   position: fixed;
   top: 0;
   left: 0;
-  width: 10%;
-  height: 10%;
   z-index: -1;
+  overflow: hidden; /* Skjuler elementer som går utenfor rammene */
 }
 
+/* Stil for bilde */
+.unique-img {
+  max-width: 100%; /* Bildet vil ikke overstige bredden på foreldreelementet */
+  height: auto; /* Automatisk høyde for å opprettholde proporsjoner */
+  display: block;
+  margin: 0 auto; /* Sentrer bildet horisontalt */
+  filter: blur(3px); /* Blur-effekt */
+}
+
+/* Stil for referanse til bilde, nederst til venstre */
 .unique-bilde-referanse {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  color: white;
+  position: fixed; /* Endre til fixed for å holde det synlig uansett rulleposisjon */
+  bottom: 20px;
+  left: 20px; /* Juster venstremargen etter behov */
+  color: white; /* Tekstfarge i hvitt */
   font-size: 14px;
   z-index: 1;
 }
