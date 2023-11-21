@@ -230,40 +230,165 @@ font-family: Optima;
 }
 
 
+
 /* SIDE 2 ACCESIBILITY */
 
 .header-side2 h1 {
 text-align: center;
 margin-top: 60px;
+margin-bottom: 60px;
 font-size: 50px;
 font-family: Optima;
 }
 
-.testresultat-container {
-  min-height: 100vh;
+.resultatside1-container{ /*En "container"som definerer området med et bilde og tekst */
+  min-height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#ffffff3c;
+  background-color: blanchedalmond;
 }
 
-.resultat-bilde {
- 
+.resultat-bilde1{ /* Bilde på venstre side i containeren */
+  position: relative;
+  align-items: center;
+  margin: 50px;
 }
 
-.resultat-bilde img {
+.resultat-bilde1 img{
   width: 50vw;
-    height: 100vh;
-    display: block;
-    object-fit: contain;
-    object-position: center;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
-.resultat-tekst {
+.tekstresultat-side1 h2{
   font-size: 30px;
+  line-height: 1.5;
   font-family: Optima;
-  line-height: 40px;
+  text-align: center;
+}
+
+.tekstresultat-side1 p{
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Optima;
+  padding: 25;
+}
+
+.resultatside2-container{ /* En "container" som definerer området med et bilde og tekst */
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.resultat-bilde2{
+  position: relative;
+  align-items: center;
+  margin: 50px;
+}
+
+.resultat-bilde2 img{
+  width: 50vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tekstresultat-side2 h2{
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: Optima;
+  text-align: center;
+}
+
+.tekstresultat-side2 p{
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Optima;
+  padding: 25;
+}
+
+
+.resultatside3-container{ /* En "container" som definerer området med et bilde og tekst */
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.resultat-bilde3{ /* Bilde på venstre side i containeren */
+  position: relative;
+  align-items: center;
+  margin: 50px;
+}
+
+.resultat-bilde3 img{ /* Justerer bildet og plasserer det gunstig for å dekke container */
+  width: 50vw;
+  height: auto;
+  display: block; 
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.tekstresultat-side3 h2{ /* Stiliserer overskrift */
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: Optima;
+  text-align: center;
+}
+
+.tekstresultat-side3 p{ /* Stiliserer tekst */
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Optima;
+  padding: 25;
+}
+
+.resultatside4-container{ /* En "container" som definerer området med et bilde og tekst */
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.resultat-bilde4{ /* Bilde på venstre side i containeren */
+  position: relative;
+  align-items: center;
+  margin: 50px;
+}
+
+.resultat-bilde4 img{
+  width: 50vw;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tekstresultat-side4 h2{
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: Optima;
+  text-align: center;
+}
+
+.tekstresultat-side4 p{
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Optima;
+  padding: 25;
 }
 
 
