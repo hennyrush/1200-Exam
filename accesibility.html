@@ -1,164 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-      <!-- Meta-tags for tegnsett og konfigurering av visningsområdet -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Meta tag for beskrivelse av side innhold -->
-    <meta name="description" content="Explore the results of the accessibility test on the Accesibility page. 
+  <meta charset="UTF-8">
+  <!-- Meta-tags for character set and viewport configuration -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tag for page content description -->
+  <meta name="description" content="Explore the results of the accessibility test on the Accessibility page. 
     Navigate seamlessly through the P35 website using our unique navbar. 
     The page includes informative visuals, such as lighthouse test results, and detailed explanations for a better understanding. 
     Discover how we prioritize accessibility and user experience.">
-    <title>Accesibility</title>
-    <link rel="stylesheet" href="main.css">
+  <!-- Sidetittel og lenke til ekstern stylesheet -->
+  <title>Accessibility</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
   <header> 
+    <!-- Seksjon for header med navigasjon -->
     <nav>
-        <div class="sirkel-logo">  
-      <div class="logo">P35</div>
-    </div>
+      <!-- Logo container -->
+      <div class="sirkel-logo">  
+        <div class="logo">P35</div>
+      </div>
+      <!-- Navigasjonsmeny -->
       <ul class="nav-menu">
         <li><a href="index.html">Introduction</a></li>
-        <li><a href="accesibility.html">Accesibility page</a></li>
+        <li><a href="accessibility.html">Accessibility page</a></li>
         <li><a href="topical.html">Topical page</a></li>
         <li><a href="campus_location.html">Campus location place</a></li>
       </ul>
     </nav>
-
+  </header>
+  
+  <!-- Hovedseksjon for innhold-->
   <main>
+    <!-- Seksjon med header og container -->
     <section class="headerside2-container">
       <div class="header-side2">
-        <h1>Accesibility Test</h1>
+        <h1>Accessibility Test</h1>
       </div>
     </section>
-
+    
+    <!-- Seksjon med første avsnitt, header og bilde -->
     <section class="resultatside1-container">
       <figure class="resultat-bilde1">
-        <img src="images/lighthouse.jpg" alt="lighthouse test resultater"/>
+        <img src="images/lighthouse.jpg" alt="lighthouse test results"/>
       </figure>
       <div class="tekstresultat-side1">
         <h2>Results page 1 "Introduction"</h2>
         <br>
-        <p>
-          The results from the tests on page 1 indicated that our code lacked a meta description. 
+        <p>The results from the tests on page 1 indicated that our code lacked a meta description. 
           The inclusion of a meta description on the website would contribute to a better overview of the content. 
           Initially, we only had a meta viewport, but following feedback, we added a meta description to the homepage. 
           Furthermore, it was pointed out that the images lacked an explicit specification of width and height; 
           we had only set max-height and min-height. In response, we chose to include both height and width 
           to specify the dimensions. With these changes, we achieved a full score in all aspects except for performance, 
-          which still stands at 70.
-          </p>
+          which still stands at 70.</p>
           <br>
-          <p>
-            We selected color combinations that complemented each other to create a pleasant visual experience. 
-            A consistent navigation menu (navbar) was implemented on three of the pages to ensure simple and 
-            user-friendly navigation. By utilizing semantic HTML elements in the code, we achieved a universal 
-            design that enhances not only readability but also simplifies navigation through the code.
-          </p>
-        </div>
-    </section>
-
-    <section class="resultatside2-container">
-      <figure class="resultat-bilde2">
-        <img src="images/lighthouse-accesibilitypage.png" alt="Resultat side 2"/>
-      </figure>
-      <div class="tekstresultat-side2">
-        <h2>Results page 2 "Accesibility"</h2>
-        <br>
-        <p>
-          The results from the Lighthouse accessibility test indicated positive outcomes, achieving a full 
-          score in all areas except performance.
-        </p>
-        <br>
-        <p>
-          Simultaneously, the test results provided feedback regarding the website's limited responsiveness to 
-          smaller screens. Despite our active efforts to identify and implement solutions for this challenge, 
-          we have not yet achieved complete mastery of the issue. We persist in our endeavors to find effective 
-          solutions to ensure optimal accessibility and user experience across all devices.
-        </p>
+        <p>We selected color combinations that complemented each other to create a pleasant visual experience. 
+          A consistent navigation menu (navbar) was implemented on three of the pages to ensure simple and 
+          user-friendly navigation. By utilizing semantic HTML elements in the code, we achieved a universal 
+          design that enhances not only readability but also simplifies navigation through the code.</p>
       </div>
     </section>
-
-    <section class= "resultatside3-container">
+    
+    <!-- Seksjon med andre avsnitt, header og bilde -->
+    <section class="resultatside2-container">
+      <figure class="resultat-bilde2">
+        <img src="images/lighthouse-accesibilitypage.png" alt="Result page 2"/>
+      </figure>
+      <div class="tekstresultat-side2">
+        <h2>Results page 2 "Accessibility"</h2>
+        <p>The results from the Lighthouse accessibility test indicated positive outcomes, achieving a full 
+          score in all areas except performance.</p>
+          <br>
+        <p>Simultaneously, the test results provided feedback regarding the website's limited responsiveness to 
+          smaller screens. Despite our active efforts to identify and implement solutions for this challenge, 
+          we have not yet achieved complete mastery of the issue. We persist in our endeavors to find effective 
+          solutions to ensure optimal accessibility and user experience across all devices.</p>
+      </div>
+    </section>
+    
+    <!-- Seksjon med tredje avsnitt, header og bilde -->
+    <section class="resultatside3-container">
       <figure class="resultat-bilde3"> 
-          <img src="images/lighthouse topical nr3.png" alt="Resultat side 3"/>
+        <img src="images/lighthouse topical nr3.png" alt="Result page 3"/>
       </figure>
       <div class="tekstresultat-side3">
         <h2>Results page 3 "Topical"</h2>
         <br>
-        <p>
-          The "Topical" page scored 95 in "Performance," 83 in "Accessibility," 91 in "Best Practices," and 89 
+        <p>The "Topical" page scored 95 in "Performance," 83 in "Accessibility," 91 in "Best Practices," and 89 
           in "SEO" in our initial test upon completion of the page. Upon closer examination, three main aspects 
-          stood out on this page: contrasts, lists, and meta-description.
-        </p>
-        <br>
-         <p>
-          The chosen color combinations did not exhibit a sufficient contrast ratio, failing to distinguish 
-          themselves adequately. This makes sense, considering we intentionally placed a black (faded) box over 
-          the main image on the page to achieve our desired effect. Additionally, several list elements lacked 
+          stood out on this page: contrasts, lists, and meta-description.</p>
+        <p>The chosen color combinations did not exhibit a sufficient contrast ratio, failing to distinguish 
+          themselves adequately. This makes sense, considering we intentionally placed a black (faded) 
+          box over the main image on the page to achieve our desired effect. Additionally, several list elements lacked 
           parent elements, such as an "unordered list." Upon scrutinizing our code after this feedback, we identified 
-          the absence of several parent elements, which we promptly addressed in multiple instances, retesting the page.
-        </p>
-        <br>
-        <p>
-          With these valuable insights and the implemented changes, the results notably improved. "Performance," 
-          "Accessibility," and "SEO" scores saw significant enhancements.
-        </p>
+          the absence of several parent elements, which we promptly addressed in multiple instances, retesting the page.</p>
+        <p>With these valuable insights and the implemented changes, the results notably improved. "Performance," 
+          "Accessibility," and "SEO" scores saw significant enhancements.</p>
+          <br>
       </div>
     </section>
-
+    
+    <!-- Seksjon med fjerde avsnitt, header og bilde -->
     <section class="resultatside4-container">
       <figure class="resultat-bilde4">
-        <img src="images/lighthouse campuslocation.jpg" alt="Resultat side 4"/>
+        <img src="images/lighthouse campuslocation.jpg" alt="Result page 4"/>
       </figure>
       <div class="tekstresultat-side4">
-        <h2>Results page 4 "Campus location place"</h2>
-        <br>
-        <p> 
-          Opportunities for improvement identified in performance focus on image optimization and the 
+        <h2>Results page 4 "Campus Location Place"</h2>
+        <p>Opportunities for improvement identified in performance focus on image optimization and the 
           elimination of rendering resources that may delay page loading. The accessibility score of 95 
           indicates room for improvement in the contrast ratio between the background and text, which can 
-          impact user readability. Nevertheless, we are satisfied with how it currently appears.
-        </p>
-        <br>
-        <p>
-          The Best Practices score of 95 indicates that the website adheres to recommended guidelines, 
+          impact user readability. Nevertheless, we are satisfied with how it currently appears.</p>
+          <br>
+        <p>The Best Practices score of 95 indicates that the website adheres to recommended guidelines, 
           although there are logged browser errors that should be addressed to optimize the user experience. 
           The SEO score of 92 suggests the need to add a meta-description for improved indexing and understanding 
-          of the website's content by search engines.
-        </p>
-        <br>
-        <p>
-          Regarding PWA, the page achieves a score of 96, but there is room for improvement related to the
+          of the website's content by search engines.</p>
+          <br>
+        <p>Regarding PWA, the page achieves a score of 96, but there is room for improvement related to the
            manifest and installation. These enhancements can contribute to optimizing the user experience, 
-           especially for mobile users.
-        </p>
-        </div>
+           especially for mobile users.</p>
+      </div>
     </section>
-
   </main>
-
+  
+  <!-- Footer-seksjon -->
   <footer>
     <nav>
-      <!-- Liste med dummy e-postadresser med lenker -->
+      <!-- List of dummy email addresses with links -->
       <ul class="footer-bar">
         <li>
           <a href="mailto:no-reply1@oslomet.no">no-reply1@oslomet.no</a>
         </li>
         <li>
-          <a href="mailto:ni-reply2@oslomet.no">no-reply2@oslomet.no</a>
+          <a href="mailto:no-reply2@oslomet.no">no-reply2@oslomet.no</a>
         </li>
         <li>
           <a href="mailto:no-reply3@oslomet.no">no-reply3@oslomet.no</a>
         </li>
-      </ul>
-  </footer>
-
-
-    
-
-</body>
-
-</html>
+     
