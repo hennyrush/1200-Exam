@@ -1,84 +1,84 @@
 * { /* Navbar som fyller ut hele siden */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 nav { /* Navigation bar */
-    display: flex;
-    align-items: center;
-    background-color: #3cb6c6;
-    height: 50px;
-    padding: 65px 85px;
-    justify-content: space-around;
+  display: flex; /* Justerer elementene for å tilpasse til skjerm */
+  align-items: center;
+  background-color: #3cb6c6;
+  height: 50px;
+  padding: 65px 85px;
+  justify-content: space-around; /* Justerer elementene for å tilpasse til skjerm */
 }
 
 nav li { /* Fjerner punkt elementer i nav bar */
-    display: inline-block;
-    margin-right: 20px; 
-    position: relative;
+  display: inline-block;
+  margin-right: 20px; 
+  position: relative;
 }
 
 .logo a { /* Fjerner "link" funksjon til tekstelementer i nav bar */
-    text-decoration: none;
-    color: #000000; 
-    height: 130px;  
+  text-decoration: none;
+  color: #000000; 
+  height: 130px;  
 }
 
 .logo { /* Logo posisjon i nav bar */
-    display: flex;
-    justify-content: space-around;
-    margin-right: 0%;
-    height: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    font-family: Optima;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0%;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Optima;
 }
 
 .sirkel-logo { /* Sirkelen rundt P35 i nav bar */
-    width: 100px; 
-    height: 90px;
-    border-radius: 50%; /* Gjør en firkantet div til en sirkel */
-    background-color:blanchedalmond;
-    border-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin-top: 50x;
-    margin-bottom: 4px;
+  width: 100px; 
+  height: 90px;
+  border-radius: 50%; /* Gjør en firkantet div til en sirkel */
+  background-color:blanchedalmond;
+  border-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 50;
+  margin-bottom: 4px;
 
 }
 
 .nav-menu { /* Nav bar tekstelementers plassering */ 
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 25px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 25px;
 }
 
 .nav-menu a { /* Utseende til tekstelementer i nav bar */
-    color: #000000;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Optima;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Optima;
 }
 .nav-menu a:hover { /* Skygge over linkelementer i nav bar når man rører dem */
-    color: grey;
+  color: grey;
 }
 
 /*SIDE 1 INDEX */
 #index_image { /* Første bilde på index side */
-    height: 750px;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    vertical-align: bottom;
+  height: 750px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 .indeximage-container{ /* Denne klassen brukes til å stilisere en "container" som inneholder tekst nederst på første bilde */
-    position: relative;
-    text-align: center;
-    color:#fff;
+  position: relative;
+  text-align: center;
+  color:#fff;
   }
 
 .indeximage-kilde1{ /* Stiliserer tekstelementet inn i containeren image-container */
@@ -89,115 +89,113 @@ nav li { /* Fjerner punkt elementer i nav bar */
 }
 
 .index-tekstboks { /* Stiliserer en tekstboks som vises øverst på et bilde på index siden */
-    width: 750px;
-    height: 350px;
-    border: 15px;
-    background-color: #20636ad4;
-    padding: 20px;
-    position: absolute;
-    top: 280px;
-    right: 0;
-    text-align: left;
+  width: 750px;
+  height: 350px;
+  border: 15px;
+  background-color: #20636ad4;
+  padding: 20px;
+  position: absolute;
+  top: 280px;
+  right: 0;
+  text-align: left;
 }
 
 .index-tekstboks h2 { /* Stiliserer første header i tekstboksen på første side */
-    font-weight: 500;
-    line-height: 1;
-    color: white;
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-family: Optima;
+  font-weight: 500;
+  line-height: 1;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-family: Optima;
 }
 
 .index-tekstboks h3 { /* Stiliserer andre header i tekstboksen på første side */
-    font-weight: 500;
-    color: white;
-    font-size: 30px;
-    line-height: 1.5;
-    font-family: Optima;
- 
+  font-weight: 500;
+  color: white;
+  font-size: 30px;
+  line-height: 1.5;
+  font-family: Optima;
 }
 
 .info-boks { /* Tekstboks under bildet på side 1 */
-    right: 0;
-    left: 0;
-    background-color: blanchedalmond;
-    height: 200px;
+  right: 0;
+  left: 0;
+  background-color: blanchedalmond;
+  height: 200px;
 }
 
 .info-boks h3 { /* Stiliserer tekst i tekstboksen som forteller om fakultet */
-    font-weight: 200px;
-    font-size: 28px;
-    line-height: 4;
-    margin-left: 100px;
-    font-family: Optima;
-
+  font-weight: 200px;
+  font-size: 28px;
+  line-height: 4;
+  margin-left: 100px;
+  font-family: Optima;
 }
 
 .les-mer-boks { /* Posisjon og størrelse på liten info knapp i tekstboks */
-    height: 50px;
-    width: 200px;
-    left: 95px;
-    right: 30px;
-    position: absolute;
-    background-color: #20636ad4;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 60px;
+  height: 50px;
+  width: 200px;
+  left: 95px;
+  right: 30px;
+  position: absolute;
+  background-color: #20636ad4;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 60px;
     
 }
 
 .les-mer-boks h4{ /* Header til liten info knapp */
-    margin-top: 5px;
-    font-weight: 600;
-    font-family: Optima;
+  margin-top: 5px;
+  font-weight: 600;
+  font-family: Optima;
 }
 
 .les-mer-boks a { /* Fjerner link linja under teksten i info knappen */
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .les-mer-boks a:hover { /* Skygge over elementer i info knapp når man rører dem */
-    color: #fff;
+  color: #fff;
 }
 
 .ellengleditschs-container { /* En "container" som definerer område der bilde nr 2 og tekst skal plasserers ved siden av hverandre */
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#ffffff3c;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#ffffff3c;
 }
 
 .venstre-bilde { /* Bilde på venstre side av container */
-    margin: 70px;
+  margin: 70px;
 }
 
 .høyre-tekst h2 { /* Stilen til overskriften i container */
-font-size: 35px;
-line-height: 3;
-font-family: Optima;
+  font-size: 35px;
+  line-height: 3;
+  font-family: Optima;
 }
 
 .høyre-tekst p{ /* Stil på teksten i container */
-font-size: 30px;
-font-family: Optima;
+  font-size: 30px;
+  font-family: Optima;
 }
 
 .venstre-bilde img { /* Bilde nr 2 plassering i container */
-    width: 50vw;
-    height: 100vh;
-    display: block;
-    object-fit: cover;
-    object-position: center;
+  width: 50vw;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .bilde2-container{ /* Container for teksten på bunnen av bilde nr 2 */
-    position: relative;
-    text-align: center;
-  }
+  position: relative;
+  text-align: center;
+}
 
 .bilde-kilde2{ /* Stiliserer tekstelementet inn i containeren bilde2-container */
   position: absolute;
@@ -208,14 +206,14 @@ font-family: Optima;
 }
 
 .footer-bar { /* Navbaren på bunn */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #3cb6c6;
-    height: 100px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3cb6c6;
+  height: 100px;
 }
 
 .footer-bar a { /* fjerner link utseende og erstatter det med svart tekst farge uten linje under */
@@ -244,11 +242,11 @@ font-family: Optima;
 
 
 .header-side2 h1 { /* Stilisering av header */
-text-align: center;
-margin-top: 60px;
-margin-bottom: 60px;
-font-size: 50px;
-font-family: Optima;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 50px;
+  font-family: Optima;
 }
 
 .resultatside1-container { /*En "container" som definerer området med et bilde og tekst */
@@ -324,7 +322,6 @@ font-family: Optima;
   font-family: Optima;
   padding: 25;
 }
-
 
 .resultatside3-container { /* En "container" som definerer området med et bilde og tekst */
   min-height: 50vh;
@@ -590,9 +587,9 @@ font-family: Optima;
 }
 
 .ouropinionsbilde-side3{ /* Bilde på venstre side i container */
- position: relative;
- align-items: center;
- margin: 50px;
+  position: relative;
+  align-items: center;
+  margin: 50px;
 }
 
 .topical-femteavsnitt h3{ /* Stilen til overskriften i container */
