@@ -661,12 +661,7 @@ font-family: Optima;
   color: #20636ad4;
 }
 
-
-
-
-
-/* LOCATION FUN PAGE ER UNDER HER- lagt til unique */
-
+/*LOCATION FUN PAGE ER UNDER HER- alle navn har unique foran for å ikke komme i konflikt med andre html sider*/
 
 /* Stil for navigasjonsknappen */
 .unique-navbar a {
@@ -685,12 +680,6 @@ font-family: Optima;
 .unique-navbar a:hover {
   background-color: rgba(138, 43, 226, 1); /* Mørkere lavendel ved hover */
 }
-
-
-
-
-
-
 
 /* Firkantede knapper og Dropdown-knapper */
 .unique-square-btn,
@@ -777,9 +766,9 @@ font-family: Optima;
   color: white; /* Tekstfarge */
 }
 
+/* -----------------menu under her-----------------*/
 
-
-/* Custom Menu Modal Styles */
+/* Custom Menu Modal Style */
 .unique-custom-modal {
   display: none;
   position: fixed;
@@ -860,11 +849,7 @@ font-family: Optima;
   }
 }
 
-
-
-
-
-
+/* ----------------Stil for body under her---------- */
 
 /* Stil for body (felles for alle sider) */
 .unique-body {
@@ -874,6 +859,8 @@ font-family: Optima;
   height: 100vh; /* Setter høyden til 100% av visningsvinduet */
   margin: 0; /* Fjerner standardkroppsmarginer */
 }
+
+/* ----------------Stil for contact under her---------- */
 
 /* Kontaktmodal Stiler */
 #uniqueContact {
@@ -977,6 +964,8 @@ font-family: Optima;
 #uniqueContact .unique-custom-button:hover {
   background-color: #989898; /* Grå ved hover */
 }
+
+/* -----------Stil for bilde under her-----------*/
 
 /* Stil for bilde */
 .unique-deliciousfood-image {
